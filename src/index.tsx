@@ -1,7 +1,7 @@
 import { ChakraProvider, ColorModeScript } from '@chakra-ui/react';
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom';
 import { io } from 'socket.io-client';
-import { ChatClientSocket } from './types';
+import { ChatClientSocket } from './interfaces';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './components/App';
@@ -9,22 +9,10 @@ import Chat from './routes/Chat';
 import Home from './routes/Home';
 import theme from './theme';
 
-const ENDPOINT = 'http://localhost:8000';
+const ENDPOINT = 'https://chat-server-3bed.onrender.com';
 
 const socket: ChatClientSocket = io(ENDPOINT);
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
-
-// const router = createBrowserRouter([
-//     {
-//         path: "/",
-//         element: <Home />
-//     },
-// 
-//     {
-//         path: "/chat",
-//         element: <Chat />
-//     }
-// ]);
 
 const router = createBrowserRouter(createRoutesFromElements(
     <Route path="/" element={<App />}>

@@ -4,8 +4,7 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import { useContext } from 'react';
 import { AppContext } from '../components/App';
-import { Chatroom } from '../../../shared/types';
-import { ChatClientSocket } from '../types';
+import { Chatroom, ChatClientSocket } from '../interfaces';
 import ChatSideBar from '../components/ChatSideBar';
 import Chatbox from '../components/Chatbox';
 

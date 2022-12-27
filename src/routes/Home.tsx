@@ -3,7 +3,7 @@ import { MdChatBubble } from 'react-icons/md'
 import { AiOutlineUser } from 'react-icons/ai'
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
-import { ChatClientSocket } from '../types';
+import { ChatClientSocket } from '../interfaces';
 import { useEffect } from 'react';
 import { useContext } from 'react';
 import { AppContext } from '../components/App';

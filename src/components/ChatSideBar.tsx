@@ -1,6 +1,6 @@
 import { useBoolean, useBreakpointValue } from '@chakra-ui/react';
 import { Avatar, Box, Flex, HStack, Icon, Stack, Text, VStack } from "@chakra-ui/react";
-import { Chatroom } from '../../../shared/types';
+import { Chatroom } from '../interfaces';
 import { useState } from 'react';
 import { BsChatSquareDots } from 'react-icons/bs'
 import { IoIosArrowBack } from 'react-icons/io';

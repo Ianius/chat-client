@@ -2,12 +2,10 @@ import { Box, Center, Divider, Flex, HStack, Icon, IconButton, Input, Text, VSta
 import { AiOutlineUser } from "react-icons/ai";
 import { RiSendPlane2Fill } from "react-icons/ri";
 import { SlArrowDown } from "react-icons/sl";
-import { Chatroom } from '../../../shared/types';
+import { Chatroom, MessageData, ChatClientSocket } from '../interfaces';
 import { useContext, useLayoutEffect, useRef } from 'react';
 import { AppContext } from '../components/App';
-import { MessageData } from '../types';
 import { useState, useEffect } from 'react';
-import { ChatClientSocket } from '../types';
 import SystemMessage from "./SystemMessage";
 import Message from "./Message";
 
