@@ -11,6 +11,7 @@ import theme from './theme';
 
 const ENDPOINT = 'http://localhost:8000';
 
+
 const socket: ChatClientSocket = io(ENDPOINT);
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 

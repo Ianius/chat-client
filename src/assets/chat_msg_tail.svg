@@ -1,0 +1,4 @@
+<!-- sample rectangle -->
+<svg fill='currentColor' width="200" height="100" xmlns="http://www.w3.org/2000/svg">
+  <polygon points="200 100, 200 0, 0 0"/>
+</svg>
